@@ -11,5 +11,5 @@ variable "network_cidr" {
 }
 
 variable "project" {
-  default = "tf-custom-machine"
+  default = "epam-test-306514"
 }

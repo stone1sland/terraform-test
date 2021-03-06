@@ -1,7 +1,7 @@
 provider "google" {
   version = "3.5.0"
 
-  credentials = file("terraform-key.json")
+  credentials = file("service-key-epam-test-306514.json")
 
   project = var.project
   region  = var.region
@@ -76,6 +76,7 @@ resource "google_compute_ssl_policy" "custom-ssl-policy" {
   name            = "custom-ssl-policy"
   min_tls_version = "TLS_1_2"
   profile         = "MODERN"
+}
 
 resource "google_compute_instance_group_manager" "epam_lb" {
   name = "my-igm"
